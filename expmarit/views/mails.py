@@ -109,7 +109,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado, seguimie
     if title == 'Notificación de transbordo de carga':
         fecha_actual = datetime.now()
 
-        resultado['asunto'] = 'Ref.: ' + str(row.numero) + '- H B/L: ' + str(row.hawb) + '- Shipper: ' + str(
+        resultado['asunto'] = 'Ref.: ' + str(row.seguimiento) + '- H B/L: ' + str(row.hawb) + '- Shipper: ' + str(
             row.embarcador) + '- Consignee: ' + str(row.consignatario) + '- Vessel: '+str(vapor)
 
         fecha_formateada = fecha_actual.strftime(
@@ -382,7 +382,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado, seguimie
         if master == 'true':
             texto += formatear_linea("AWB", row.awb)
 
-        texto += formatear_linea("Referencia", embarque.numero)
+        texto += formatear_linea("Referencia", row.seguimiento)
 
         texto += formatear_linea("Posición", embarque.posicion)
 
@@ -492,7 +492,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado, seguimie
         texto += formatear_linea("CONDICION HBL", "")
         texto += formatear_linea("COURIER CON DOCS", "")
         texto += formatear_linea("COURIER/GUIA", "")
-        resultado['asunto'] = f'SEGUIMIENTO {row.numero} // TRASPASO A OPERACIONES'
+        resultado['asunto'] = f'SEGUIMIENTO {seguimiento.numero} // TRASPASO A OPERACIONES'
         return texto, resultado
     elif title == 'Aviso de desconsolidacion':
 

@@ -111,7 +111,7 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
         if title == 'Notificación de transbordo de carga':
             fecha_actual = datetime.now()
 
-            resultado['asunto'] = 'Ref.: ' + str(row.numero) + '- H B/L: ' + str(row.hawb) + '- Shipper: ' + str(
+            resultado['asunto'] = 'Ref.: ' + str(row.seguimiento) + '- H B/L: ' + str(row.hawb) + '- Shipper: ' + str(
                 row.embarcador) + '- Consignee: ' + str(row.consignatario)
 
             fecha_formateada = fecha_actual.strftime(
@@ -378,7 +378,7 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
             if master_boolean == 'true':
                 texto += formatear_linea("AWB", embarque.awb)
 
-            texto += formatear_linea("Referencia", embarque.numero)
+            texto += formatear_linea("Referencia", row.seguimiento)
 
             texto += formatear_linea("Posición", embarque.posicion)
 
@@ -483,7 +483,7 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
             return texto, resultado
         elif title == 'Liberacion':
 
-            resultado['asunto'] = f'{row.awb} - seguimiento: {row.numero}'
+            resultado['asunto'] = f'{row.awb} - seguimiento: {row.seguimiento}'
 
             locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
 
@@ -543,7 +543,7 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
 
             llegada = seguimiento.eta.strftime("%d/%m/%Y") if isinstance(seguimiento.eta, datetime) else ""
 
-            ref = f"{row.seguimiento}/{row.numero}"
+            ref = f"{row.seguimiento}"
 
             texto += formatear_linea("Referencia", ref)
 
@@ -932,7 +932,7 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
 
             texto += formatear_linea("COURIER/GUIA", "")
 
-            resultado['asunto'] = f'SEGUIMIENTO {row.numero} // TRASPASO A OPERACIONES'
+            resultado['asunto'] = f'SEGUIMIENTO {seguimiento.numero} // TRASPASO A OPERACIONES'
 
             return texto, resultado
 
@@ -1119,7 +1119,7 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
             texto += formatear_linea("Teléfono", consignatario.telefono)
 
             texto += "<br>"
-            texto += formatear_linea("Referencia interna", f"{seguimiento.numero}/{row.numero}")
+            texto += formatear_linea("Referencia interna", f"{seguimiento.numero}")
             texto += formatear_linea("Posición", row.posicion)
             texto += formatear_linea("Recepción estimada de mercadería", llegada)
             origen_txt = 'S/I'

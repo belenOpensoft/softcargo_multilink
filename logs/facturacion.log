@@ -1,0 +1,836 @@
+2025-09-18 10:59:13,905 - INFO - PDF guardado correctamente 112
+2025-09-18 10:59:23,228 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 10:59:50,208 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 11:00:08,603 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 11:05:34,893 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion_electronica/ucfe_client.py changed, reloading.
+2025-09-18 11:20:41,871 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:26:50,370 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:28:49,410 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:28:51,005 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:29:39,215 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:29:44,180 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:30:35,289 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:31:10,612 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:33:55,364 - WARNING - Not Found: /favicon.ico
+2025-09-18 11:35:18,041 - INFO - Error al firmar: OrderedDict({'ErrorCode': 0, 'ErrorMessage': None, 'Resp': OrderedDict({'Adenda': None, 'CaeNroDesde': None, 'CaeNroHasta': None, 'Certificado': None, 'CertificadoParaFirmarCfe': None, 'ClaveCertificadoFirma': None, 'CodComercio': 'OCEANL-394', 'CodRta': '30', 'CodTerminal': 'FC-394', 'CodigoSeguridad': None, 'DatosQr': None, 'EstadoEnDgiCfeRecibido': None, 'EstadoSituacion': None, 'Etiquetas': None, 'FechaFirma': None, 'FechaReq': '20250918', 'HoraReq': '113439', 'IdCae': None, 'IdReq': '18113439', 'ImagenQr': None, 'MensajeRta': 'Error al analizar EntityName. línea 84, posición 21.', 'NumeroCfe': '6880', 'RangoDesde': None, 'RangoHasta': None, 'RutEmisor': '213971080016', 'Serie': 'A', 'TipoCfe': '111', 'TipoMensaje': 311, 'TipoNotificacion': None, 'Uuid': '092d5803-7519-4ad3-acf5-a389f8e53b2e', 'VencimientoCae': None, 'XmlCfeFirmado': None}), 'RespEnc': None}) <?xml version="1.0" encoding="UTF-8"?>
+<CFE version="1.0" xmlns="http://cfe.dgi.gub.uy">
+  <eFact>
+    <Encabezado>
+      <IdDoc>
+        <TipoCFE>111</TipoCFE>
+        <Serie>A</Serie>
+        <Nro>6880</Nro>
+        <FchEmis>2025-03-26</FchEmis>
+        <FmaPago>2</FmaPago>
+      </IdDoc>
+      <Emisor>
+        <RUCEmisor>213971080016</RUCEmisor>
+        <RznSoc>Oceanlink LTDA</RznSoc>
+        <CdgDGISucur>1</CdgDGISucur>
+        <DomFiscal>Bolonia 2280 LATU, Edificio Los Álamos, Of.103</DomFiscal>
+        <Ciudad>Montevideo</Ciudad>
+        <Departamento>Montevideo</Departamento>
+      </Emisor>
+      <Receptor>
+        <TipoDocRecep>2</TipoDocRecep>
+        <CodPaisRecep>UY</CodPaisRecep>
+        <DocRecep>212759320019</DocRecep>
+        <RznSocRecep>RICOH SOUTHAMERICA DISTRIBUTION CENTER</RznSocRecep>
+        <DirRecep>RUTA 8 KM 17500 ZONA FRANCA DE MONTEVIDEO</DirRecep>
+        <CiudadRecep>MONTEVIDEO</CiudadRecep>
+        <PaisRecep>URUGUAY</PaisRecep>
+      </Receptor>
+      <Totales>
+                <TpoMoneda>USD</TpoMoneda>
+        
+        
+            <MntNoGrv>870.00</MntNoGrv>
+        
+        
+            <MntNetoIVATasaBasica>1204.00</MntNetoIVATasaBasica>
+        <IVATasaMin>10.000</IVATasaMin>
+            <IVATasaBasica>22</IVATasaBasica>
+            <MntIVATasaBasica>264.88</MntIVATasaBasica>
+        
+        <MntTotal>2338.8800</MntTotal>
+        <CantLinDet>7</CantLinDet>
+        <MntPagar>2338.8800</MntPagar>
+      </Totales>
+    </Encabezado>
+    <Detalle>
+      
+      <Item>
+        <NroLinDet>1</NroLinDet>
+        <IndFact>1</IndFact>
+        <NomItem>THC</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>870.0000</PrecioUnitario>
+        <MontoItem>870.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>2</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>DOC FEE GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>504.0000</PrecioUnitario>
+        <MontoItem>504.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>3</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>LOGISTIC FEE (IVA)</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>204.0000</PrecioUnitario>
+        <MontoItem>204.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>4</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>M & R GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>132.0000</PrecioUnitario>
+        <MontoItem>132.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>5</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>BL FEE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>104.0000</PrecioUnitario>
+        <MontoItem>104.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>6</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>HANDLING</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>205.0000</PrecioUnitario>
+        <MontoItem>205.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>7</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>EXPRESS RELEASE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>55.0000</PrecioUnitario>
+        <MontoItem>55.0000</MontoItem>
+      </Item>
+      
+    </Detalle>
+  </eFact>
+</CFE>
+2025-09-18 11:37:39,118 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 11:38:15,045 - INFO - Error al firmar: OrderedDict({'ErrorCode': 0, 'ErrorMessage': None, 'Resp': OrderedDict({'Adenda': None, 'CaeNroDesde': None, 'CaeNroHasta': None, 'Certificado': None, 'CertificadoParaFirmarCfe': None, 'ClaveCertificadoFirma': None, 'CodComercio': 'OCEANL-394', 'CodRta': '30', 'CodTerminal': 'FC-394', 'CodigoSeguridad': None, 'DatosQr': None, 'EstadoEnDgiCfeRecibido': None, 'EstadoSituacion': None, 'Etiquetas': None, 'FechaFirma': None, 'FechaReq': '20250918', 'HoraReq': '113814', 'IdCae': None, 'IdReq': '18113814', 'ImagenQr': None, 'MensajeRta': 'Error al analizar EntityName. línea 86, posición 21.', 'NumeroCfe': '6880', 'RangoDesde': None, 'RangoHasta': None, 'RutEmisor': '213971080016', 'Serie': 'A', 'TipoCfe': '111', 'TipoMensaje': 311, 'TipoNotificacion': None, 'Uuid': '615fad54-487d-4e0e-8307-90c16e62cce0', 'VencimientoCae': None, 'XmlCfeFirmado': None}), 'RespEnc': None}) <?xml version="1.0" encoding="UTF-8"?>
+<CFE version="1.0" xmlns="http://cfe.dgi.gub.uy">
+  <eFact>
+    <Encabezado>
+      <IdDoc>
+        <TipoCFE>111</TipoCFE>
+        <Serie>A</Serie>
+        <Nro>6880</Nro>
+        <FchEmis>2025-03-26</FchEmis>
+        <FmaPago>2</FmaPago>
+      </IdDoc>
+      <Emisor>
+        <RUCEmisor>213971080016</RUCEmisor>
+        <RznSoc>Oceanlink LTDA</RznSoc>
+        <CdgDGISucur>1</CdgDGISucur>
+        <DomFiscal>Bolonia 2280 LATU, Edificio Los Álamos, Of.103</DomFiscal>
+        <Ciudad>Montevideo</Ciudad>
+        <Departamento>Montevideo</Departamento>
+      </Emisor>
+      <Receptor>
+        <TipoDocRecep>2</TipoDocRecep>
+        <CodPaisRecep>UY</CodPaisRecep>
+        <DocRecep>212759320019</DocRecep>
+        <RznSocRecep>RICOH SOUTHAMERICA DISTRIBUTION CENTER</RznSocRecep>
+        <DirRecep>RUTA 8 KM 17500 ZONA FRANCA DE MONTEVIDEO</DirRecep>
+        <CiudadRecep>MONTEVIDEO</CiudadRecep>
+        <PaisRecep>URUGUAY</PaisRecep>
+      </Receptor>
+      <Totales>
+                <TpoMoneda>USD</TpoMoneda>
+        
+        <TpoCambio>42.0930</TpoCambio>
+        
+        
+            <MntNoGrv>870.00</MntNoGrv>
+        
+        
+            <MntNetoIVATasaBasica>1204.00</MntNetoIVATasaBasica>
+        <IVATasaMin>10.000</IVATasaMin>
+            <IVATasaBasica>22</IVATasaBasica>
+            <MntIVATasaBasica>264.88</MntIVATasaBasica>
+        
+        <MntTotal>2338.8800</MntTotal>
+        <CantLinDet>7</CantLinDet>
+        <MntPagar>2338.8800</MntPagar>
+      </Totales>
+    </Encabezado>
+    <Detalle>
+      
+      <Item>
+        <NroLinDet>1</NroLinDet>
+        <IndFact>1</IndFact>
+        <NomItem>THC</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>870.0000</PrecioUnitario>
+        <MontoItem>870.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>2</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>DOC FEE GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>504.0000</PrecioUnitario>
+        <MontoItem>504.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>3</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>LOGISTIC FEE (IVA)</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>204.0000</PrecioUnitario>
+        <MontoItem>204.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>4</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>M & R GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>132.0000</PrecioUnitario>
+        <MontoItem>132.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>5</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>BL FEE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>104.0000</PrecioUnitario>
+        <MontoItem>104.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>6</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>HANDLING</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>205.0000</PrecioUnitario>
+        <MontoItem>205.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>7</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>EXPRESS RELEASE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>55.0000</PrecioUnitario>
+        <MontoItem>55.0000</MontoItem>
+      </Item>
+      
+    </Detalle>
+  </eFact>
+</CFE>
+2025-09-18 11:38:26,622 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 11:41:28,218 - INFO - Error al firmar: OrderedDict({'ErrorCode': 0, 'ErrorMessage': None, 'Resp': OrderedDict({'Adenda': None, 'CaeNroDesde': None, 'CaeNroHasta': None, 'Certificado': None, 'CertificadoParaFirmarCfe': None, 'ClaveCertificadoFirma': None, 'CodComercio': 'OCEANL-394', 'CodRta': '30', 'CodTerminal': 'FC-394', 'CodigoSeguridad': None, 'DatosQr': None, 'EstadoEnDgiCfeRecibido': None, 'EstadoSituacion': None, 'Etiquetas': None, 'FechaFirma': None, 'FechaReq': '20250918', 'HoraReq': '113929', 'IdCae': None, 'IdReq': '18113929', 'ImagenQr': None, 'MensajeRta': 'Error al analizar EntityName. línea 86, posición 21.', 'NumeroCfe': '6880', 'RangoDesde': None, 'RangoHasta': None, 'RutEmisor': '213971080016', 'Serie': 'A', 'TipoCfe': '111', 'TipoMensaje': 311, 'TipoNotificacion': None, 'Uuid': 'c60f2b25-a518-45de-9ee3-6542db03e8c1', 'VencimientoCae': None, 'XmlCfeFirmado': None}), 'RespEnc': None}) <?xml version="1.0" encoding="UTF-8"?>
+<CFE version="1.0" xmlns="http://cfe.dgi.gub.uy">
+  <eFact>
+    <Encabezado>
+      <IdDoc>
+        <TipoCFE>111</TipoCFE>
+        <Serie>A</Serie>
+        <Nro>6880</Nro>
+        <FchEmis>2025-03-26</FchEmis>
+        <FmaPago>2</FmaPago>
+      </IdDoc>
+      <Emisor>
+        <RUCEmisor>213971080016</RUCEmisor>
+        <RznSoc>Oceanlink LTDA</RznSoc>
+        <CdgDGISucur>1</CdgDGISucur>
+        <DomFiscal>Bolonia 2280 LATU, Edificio Los Álamos, Of.103</DomFiscal>
+        <Ciudad>Montevideo</Ciudad>
+        <Departamento>Montevideo</Departamento>
+      </Emisor>
+      <Receptor>
+        <TipoDocRecep>2</TipoDocRecep>
+        <CodPaisRecep>UY</CodPaisRecep>
+        <DocRecep>212759320019</DocRecep>
+        <RznSocRecep>RICOH SOUTHAMERICA DISTRIBUTION CENTER</RznSocRecep>
+        <DirRecep>RUTA 8 KM 17500 ZONA FRANCA DE MONTEVIDEO</DirRecep>
+        <CiudadRecep>MONTEVIDEO</CiudadRecep>
+        <PaisRecep>URUGUAY</PaisRecep>
+      </Receptor>
+      <Totales>
+                <TpoMoneda>USD</TpoMoneda>
+        
+        <TpoCambio>42.0930</TpoCambio>
+        
+        
+            <MntNoGrv>870.00</MntNoGrv>
+        
+        
+            <MntNetoIVATasaBasica>1204.00</MntNetoIVATasaBasica>
+        <IVATasaMin>10.000</IVATasaMin>
+            <IVATasaBasica>22</IVATasaBasica>
+            <MntIVATasaBasica>264.88</MntIVATasaBasica>
+        
+        <MntTotal>2338.8800</MntTotal>
+        <CantLinDet>7</CantLinDet>
+        <MntPagar>2338.8800</MntPagar>
+      </Totales>
+    </Encabezado>
+    <Detalle>
+      
+      <Item>
+        <NroLinDet>1</NroLinDet>
+        <IndFact>1</IndFact>
+        <NomItem>THC</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>870.0000</PrecioUnitario>
+        <MontoItem>870.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>2</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>DOC FEE GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>504.0000</PrecioUnitario>
+        <MontoItem>504.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>3</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>LOGISTIC FEE (IVA)</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>204.0000</PrecioUnitario>
+        <MontoItem>204.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>4</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>M & R GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>132.0000</PrecioUnitario>
+        <MontoItem>132.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>5</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>BL FEE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>104.0000</PrecioUnitario>
+        <MontoItem>104.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>6</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>HANDLING</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>205.0000</PrecioUnitario>
+        <MontoItem>205.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>7</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>EXPRESS RELEASE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>55.0000</PrecioUnitario>
+        <MontoItem>55.0000</MontoItem>
+      </Item>
+      
+    </Detalle>
+  </eFact>
+</CFE>
+2025-09-18 11:42:57,001 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 11:47:29,684 - INFO - Error al firmar: OrderedDict({'ErrorCode': 0, 'ErrorMessage': None, 'Resp': OrderedDict({'Adenda': None, 'CaeNroDesde': None, 'CaeNroHasta': None, 'Certificado': None, 'CertificadoParaFirmarCfe': None, 'ClaveCertificadoFirma': None, 'CodComercio': 'OCEANL-394', 'CodRta': '30', 'CodTerminal': 'FC-394', 'CodigoSeguridad': None, 'DatosQr': None, 'EstadoEnDgiCfeRecibido': None, 'EstadoSituacion': None, 'Etiquetas': None, 'FechaFirma': None, 'FechaReq': '20250918', 'HoraReq': '114309', 'IdCae': None, 'IdReq': '18114309', 'ImagenQr': None, 'MensajeRta': 'Error al analizar EntityName. línea 86, posición 21.', 'NumeroCfe': '6880', 'RangoDesde': None, 'RangoHasta': None, 'RutEmisor': '213971080016', 'Serie': 'A', 'TipoCfe': '111', 'TipoMensaje': 311, 'TipoNotificacion': None, 'Uuid': '370563a0-8bc3-4e93-bef0-6e6c323f6979', 'VencimientoCae': None, 'XmlCfeFirmado': None}), 'RespEnc': None}) <?xml version="1.0" encoding="UTF-8"?>
+<CFE version="1.0" xmlns="http://cfe.dgi.gub.uy">
+  <eFact>
+    <Encabezado>
+      <IdDoc>
+        <TipoCFE>111</TipoCFE>
+        <Serie>A</Serie>
+        <Nro>6880</Nro>
+        <FchEmis>2025-03-26</FchEmis>
+        <FmaPago>2</FmaPago>
+      </IdDoc>
+      <Emisor>
+        <RUCEmisor>213971080016</RUCEmisor>
+        <RznSoc>Oceanlink LTDA</RznSoc>
+        <CdgDGISucur>1</CdgDGISucur>
+        <DomFiscal>Bolonia 2280 LATU, Edificio Los Álamos, Of.103</DomFiscal>
+        <Ciudad>Montevideo</Ciudad>
+        <Departamento>Montevideo</Departamento>
+      </Emisor>
+      <Receptor>
+        <TipoDocRecep>2</TipoDocRecep>
+        <CodPaisRecep>UY</CodPaisRecep>
+        <DocRecep>212759320019</DocRecep>
+        <RznSocRecep>RICOH SOUTHAMERICA DISTRIBUTION CENTER</RznSocRecep>
+        <DirRecep>RUTA 8 KM 17500 ZONA FRANCA DE MONTEVIDEO</DirRecep>
+        <CiudadRecep>MONTEVIDEO</CiudadRecep>
+        <PaisRecep>URUGUAY</PaisRecep>
+      </Receptor>
+      <Totales>
+                <TpoMoneda>USD</TpoMoneda>
+        
+        <TpoCambio>42.0930</TpoCambio>
+        
+        
+            <MntNoGrv>870.00</MntNoGrv>
+        
+        
+            <MntNetoIVATasaBasica>1204.00</MntNetoIVATasaBasica>
+        <IVATasaMin>10.000</IVATasaMin>
+            <IVATasaBasica>22</IVATasaBasica>
+            <MntIVATasaBasica>264.88</MntIVATasaBasica>
+        
+        <MntTotal>2338.8800</MntTotal>
+        <CantLinDet>7</CantLinDet>
+        <MntPagar>2338.8800</MntPagar>
+      </Totales>
+    </Encabezado>
+    <Detalle>
+      
+      <Item>
+        <NroLinDet>1</NroLinDet>
+        <IndFact>1</IndFact>
+        <NomItem>THC</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>870.0000</PrecioUnitario>
+        <MontoItem>870.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>2</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>DOC FEE GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>504.0000</PrecioUnitario>
+        <MontoItem>504.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>3</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>LOGISTIC FEE (IVA)</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>204.0000</PrecioUnitario>
+        <MontoItem>204.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>4</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>M & R GRAV</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>132.0000</PrecioUnitario>
+        <MontoItem>132.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>5</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>BL FEE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>104.0000</PrecioUnitario>
+        <MontoItem>104.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>6</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>HANDLING</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>205.0000</PrecioUnitario>
+        <MontoItem>205.0000</MontoItem>
+      </Item>
+      
+      <Item>
+        <NroLinDet>7</NroLinDet>
+        <IndFact>3</IndFact>
+        <NomItem>EXPRESS RELEASE</NomItem>
+        
+        <Cantidad>1</Cantidad>
+        <UniMed>N/A</UniMed>
+        <PrecioUnitario>55.0000</PrecioUnitario>
+        <MontoItem>55.0000</MontoItem>
+      </Item>
+      
+    </Detalle>
+  </eFact>
+</CFE>
+2025-09-18 11:48:33,414 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 13:46:06,000 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-18 15:21:41,634 - ERROR - Internal Server Error: /admin_cont/editar_consultar_ventas/
+Traceback (most recent call last):
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/editar_consultar_ventas.py", line 63, in editar_consultar_ventas
+    'importe': float(r.total),
+               ^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2025-09-18 15:21:45,366 - ERROR - Internal Server Error: /admin_cont/editar_consultar_ventas/
+Traceback (most recent call last):
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/editar_consultar_ventas.py", line 63, in editar_consultar_ventas
+    'importe': float(r.total),
+               ^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2025-09-18 15:24:44,120 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/editar_consultar_ventas.py changed, reloading.
+2025-09-18 15:25:40,348 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/editar_consultar_ventas.py changed, reloading.
+2025-09-18 15:25:46,802 - WARNING - Not Found: /favicon.ico
+2025-09-18 15:26:56,649 - WARNING - Not Found: /favicon.ico
+2025-09-18 15:48:49,721 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/cargosystem/settings.py changed, reloading.
+2025-09-18 17:12:02,639 - WARNING - Not Found: /favicon.ico
+2025-09-19 10:40:23,027 - ERROR - Internal Server Error: /admin_cont/verificar_arbitraje/
+Traceback (most recent call last):
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'tipo_moneda=='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/login/views/login.py", line 100, in verificar_arbitraje
+    return render(request, 'forzar_arbitraje.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==' from 'tipo_moneda=='
+2025-09-19 10:40:23,115 - WARNING - Not Found: /favicon.ico
+2025-09-19 10:41:09,763 - ERROR - Internal Server Error: /admin_cont/verificar_arbitraje/
+Traceback (most recent call last):
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'tipo_moneda=='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/login/views/login.py", line 100, in verificar_arbitraje
+    return render(request, 'forzar_arbitraje.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==' from 'tipo_moneda=='
+2025-09-19 10:45:55,202 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/login/views/login.py changed, reloading.
+2025-09-19 10:46:13,004 - ERROR - Internal Server Error: /admin_cont/verificar_arbitraje/
+Traceback (most recent call last):
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/opensoft_pc2/PycharmProjects/softcargo/login/views/login.py", line 88, in verificar_arbitraje
+    decoded = raw_rates.decode("utf-8")
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'JsonResponse' object has no attribute 'decode'
+2025-09-19 10:46:47,790 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/login/views/login.py changed, reloading.
+2025-09-19 10:53:17,195 - WARNING - Not Found: /favicon.ico
+2025-09-19 10:54:19,053 - WARNING - Not Found: /favicon.ico
+2025-09-19 10:55:52,634 - WARNING - Not Found: /favicon.ico
+2025-09-19 10:59:51,531 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/models.py changed, reloading.
+2025-09-19 11:02:40,579 - WARNING - Not Found: /favicon.ico
+2025-09-19 11:07:22,462 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:12:43,041 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:15:14,570 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:16:58,444 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:19:44,966 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:20:56,285 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:22:23,875 - INFO - Error al firmar: OrderedDict({'ErrorCode': 0, 'ErrorMessage': None, 'Resp': OrderedDict({'Adenda': None, 'CaeNroDesde': None, 'CaeNroHasta': None, 'Certificado': None, 'CertificadoParaFirmarCfe': None, 'ClaveCertificadoFirma': None, 'CodComercio': 'OCEANL-394', 'CodRta': '31', 'CodTerminal': 'FC-394', 'CodigoSeguridad': None, 'DatosQr': None, 'EstadoEnDgiCfeRecibido': None, 'EstadoSituacion': None, 'Etiquetas': None, 'FechaFirma': None, 'FechaReq': '20250919', 'HoraReq': '112223', 'IdCae': None, 'IdReq': '19112223', 'ImagenQr': None, 'MensajeRta': "Error: El elemento 'http://cfe.dgi.gub.uy:Nro' no es válido. El valor '6765.0' no es válido según su tipo de datos 'http://cfe.dgi.gub.uy:NroCFEType' - La cadena '6765.0' no es un valor Integer válido.\r\n", 'NumeroCfe': '6765.0', 'RangoDesde': None, 'RangoHasta': None, 'RutEmisor': '213971080016', 'Serie': 'A', 'TipoCfe': '101', 'TipoMensaje': 311, 'TipoNotificacion': None, 'Uuid': '982a2494-d49f-4daa-ab32-a8b69925d8bd', 'VencimientoCae': None, 'XmlCfeFirmado': None}), 'RespEnc': None}) <?xml version="1.0" encoding="UTF-8"?>
+<CFE version="1.0" xmlns="http://cfe.dgi.gub.uy">
+    <eTck>
+        <Encabezado>
+            <IdDoc>
+                <TipoCFE>101</TipoCFE>
+                <Serie>A</Serie>
+                <Nro>6765.0</Nro>
+                <FchEmis>2025-03-31</FchEmis>
+                <FmaPago>2</FmaPago>
+            </IdDoc>
+            <Emisor>
+                <RUCEmisor>213971080016</RUCEmisor>
+                <RznSoc>Oceanlink LTDA</RznSoc>
+                <CdgDGISucur>1</CdgDGISucur>
+                <DomFiscal>Bolonia 2280 LATU, Edificio Los Álamos, Of.103</DomFiscal>
+                <Ciudad>Montevideo</Ciudad>
+                <Departamento>Montevideo</Departamento>
+            </Emisor>
+            
+            <Receptor>
+                <TipoDocRecep>4</TipoDocRecep>
+                <CodPaisRecep>UY</CodPaisRecep>
+                
+                <DocRecepExt>CF</DocRecepExt>
+                
+                <RznSocRecep>OCEANLINK GROUP CORP.</RznSocRecep>
+                <DirRecep>CALLE 53 MARBELLA, PISO 1 AREA COMERCIAL, WORLD TR</DirRecep>
+                <CiudadRecep>Montevideo</CiudadRecep>
+                <PaisRecep>PANAMA</PaisRecep>
+            </Receptor>
+            
+
+            <Totales>
+                <TpoMoneda>USD</TpoMoneda>
+                
+                <TpoCambio>42.1110</TpoCambio>
+                
+                
+                <MntNoGrv>2930.00</MntNoGrv>
+                
+                
+                <MntTotal>2930.0000</MntTotal>
+                <CantLinDet>1</CantLinDet>
+                <MntPagar>2930.0000</MntPagar>
+
+            </Totales>
+        </Encabezado>
+        <Detalle>
+            
+            <Item>
+                <NroLinDet>1</NroLinDet>
+                <IndFact>1</IndFact>
+                <NomItem>FLETE CARGA EN TRANSITO</NomItem>
+                <Cantidad>1</Cantidad>
+                <UniMed>N/A</UniMed>
+                <PrecioUnitario>2930.0000</PrecioUnitario>
+                <MontoItem>2930.0000</MontoItem>
+            </Item>
+            
+        </Detalle>
+    </eTck>
+</CFE>
+2025-09-19 11:24:09,853 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:26:04,250 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.
+2025-09-19 11:40:46,189 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/expmarit/views/mails.py changed, reloading.
+2025-09-19 12:21:08,275 - INFO - /home/opensoft_pc2/PycharmProjects/softcargo/administracion_contabilidad/views/facturacion.py changed, reloading.

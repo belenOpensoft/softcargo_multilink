@@ -1618,7 +1618,6 @@ def hacer_nota_credito_old(request):
         return JsonResponse({"mensaje": f"Error al crear nota de crédito: {str(e)}"}, status=500)
 
 
-
 def cargar_pendientes_imputacion_venta(request):
     try:
         nrocliente = request.GET.get('nrocliente')
@@ -1664,7 +1663,6 @@ def cargar_pendientes_imputacion_venta(request):
         return JsonResponse({'error': str(e)}, status=500)
 
 
-
 def facturar_uruware(numero,tipo,serie,moneda,cliente_data,precio_total,neto,iva,items_data,facturas_imputadas,fecha,arbitraje,mnto_neto,exento,autogen):
         try:
             numero = int(numero)
@@ -1702,6 +1700,9 @@ def facturar_uruware(numero,tipo,serie,moneda,cliente_data,precio_total,neto,iva
             if cliente:
                 ciudad = Ciudades.objects.filter(codigo=cliente.ciudad).first()
             #
+            if not ciudad:
+                return JsonResponse({"success": False, "mensaje": "El cliente no tiene una ciudad ingresada. Dirijase a mantenimientos y complete los datos para facturar."})
+
             data = {
                 "tipo_cfe": tipo_cfe,
                 "serie": serie,
@@ -1988,6 +1989,9 @@ def facturar_uruware_nc_directa(numero, tipo, serie, moneda, cliente_codigo, pre
         if cliente:
             ciudad = Ciudades.objects.filter(codigo=cliente.ciudad).first()
         #
+        if not ciudad:
+            return JsonResponse({"success": False, "mensaje": "El cliente no tiene una ciudad ingresada. Dirijase a mantenimientos y complete los datos para facturar."})
+
         items_nc = Boleta.objects.filter(autogenerado=nota_creada)
 
         data = {
@@ -2186,6 +2190,10 @@ def refacturar_uruware(request):
         ciudad = None
         if cliente:
             ciudad = Ciudades.objects.filter(codigo=cliente.ciudad).first()
+
+        if not ciudad:
+            return JsonResponse({"success": False, "mensaje": "El cliente no tiene una ciudad ingresada. Dirijase a mantenimientos y complete los datos para facturar."})
+
         #
         items_factura = Boleta.objects.filter(autogenerado=autogenerado)
 
@@ -2226,7 +2234,7 @@ def refacturar_uruware(request):
             "documento_receptor": cliente.ruc if cliente else '',
             "razon_social_receptor": cliente.razonsocial if cliente else '',
             "direccion_receptor": cliente.direccion if cliente else '',
-            "ciudad_receptor": ciudad.nombre if ciudad else 'Montevideo',
+            "ciudad_receptor": ciudad.nombre if ciudad else '',
             "pais_receptor": cliente.pais if cliente else '',
             "lleva_receptor": False,
             "es_extranjero": True if cliente.pais !='Uruguay' else False,

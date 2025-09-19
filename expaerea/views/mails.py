@@ -351,7 +351,8 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
         if master == 'true':
             texto += formatear_linea("AWB", row.awb)
 
-        texto += formatear_linea("Referencia", embarque.numero)
+        texto += formatear_linea("Referencia", row.seguimiento)
+
 
         texto += formatear_linea("Posición", embarque.posicion)
 
@@ -461,7 +462,7 @@ def get_data_html(row_number, row, row2,seg, title, texto, resultado,seguimiento
         texto += formatear_linea("CONDICION HBL", "")
         texto += formatear_linea("COURIER CON DOCS", "")
         texto += formatear_linea("COURIER/GUIA", "")
-        resultado['asunto'] = f'SEGUIMIENTO {row.numero} // TRASPASO A OPERACIONES'
+        resultado['asunto'] = f'SEGUIMIENTO {seguimiento.numero} // TRASPASO A OPERACIONES'
         return texto,resultado
     elif title == 'Orden de facturacion':
 

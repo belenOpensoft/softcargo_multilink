@@ -255,7 +255,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
 
         texto += "<br>"
 
-        texto += formatear_linea("Internal Reference", f"{seguimiento.numero}/{row.numero}")
+        texto += formatear_linea("Internal Reference", f"{seguimiento.numero}")
 
         texto += formatear_linea("Position", row.posicion)
 
@@ -367,7 +367,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
         texto += formatear_linea("Teléfono", consignatario.telefono)
 
         texto += "<br>"
-        texto += formatear_linea("Referencia interna", f"{seguimiento.numero}/{row.numero}")
+        texto += formatear_linea("Referencia interna", f"{seguimiento.numero}")
         texto += formatear_linea("Posición", row.posicion)
         texto += formatear_linea("Recepción estimada de mercadería", llegada)
 
@@ -510,7 +510,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
 
         resultado['asunto'] = (
 
-            f'Ref.: {embarque.numero} -'
+            f'Ref.: {row.seguimiento} -'
 
             f'HB/l: {row.hawb} - Ship: {row.embarcador} - Consig: {row.consignatario}; Viaje: {viaje}; Ord. Cliente: {refcliente}'
 
@@ -558,7 +558,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
         if master_boolean == 'true':
             texto += formatear_linea("AWB", embarque.awb)
 
-        texto += formatear_linea("Referencia", embarque.numero)
+        texto += formatear_linea("Referencia", row.seguimiento)
 
         texto += formatear_linea("Posición", embarque.posicion)
 
@@ -663,7 +663,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
 
         llegada = seguimiento.eta.strftime("%d/%m/%Y") if isinstance(seguimiento.eta, datetime) else ""
 
-        ref = f"{row.seguimiento}/{row.numero}"
+        ref = f"{row.seguimiento}"
 
         texto += formatear_linea("Referencia", ref)
 
@@ -873,7 +873,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
 
         texto += formatear_linea("COURIER/GUIA", "")
 
-        resultado['asunto'] = f'SEGUIMIENTO {row.numero} // TRASPASO A OPERACIONES'
+        resultado['asunto'] = f'SEGUIMIENTO {seguimiento.numero} // TRASPASO A OPERACIONES'
 
         return texto, resultado
     elif title == 'Aviso de desconsolidacion':

@@ -309,7 +309,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
 
         resultado['asunto'] = (
 
-            f'Ref.: {embarque.numero} - CS: {row.seguimiento} - '
+            f'Ref.: {row.seguimiento} - '
 
             f'HB/l: {row.hawb} - Ship: {row.embarcador} - Consig: {row.consignatario}; Ord. Cliente: {refcliente}'
 
@@ -365,7 +365,8 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
         if master == 'true':
             texto += formatear_linea("AWB", row.awb)
 
-        texto += formatear_linea("Referencia", embarque.numero)
+        texto += formatear_linea("Referencia", row.seguimiento)
+
 
         texto += formatear_linea("Posición", embarque.posicion)
 
@@ -468,7 +469,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
 
         texto += formatear_linea("COURIER/GUIA", "")
 
-        resultado['asunto'] = f'SEGUIMIENTO {row.numero} // TRASPASO A OPERACIONES'
+        resultado['asunto'] = f'SEGUIMIENTO {seguimiento.numero} // TRASPASO A OPERACIONES'
 
         return texto, resultado
     elif title == 'Orden de facturacion':
@@ -624,7 +625,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
     elif title == 'Shipping instruction':
         tabla_html = "<table style='width:40%'>"
         # Definir los campos y sus respectivos valores
-        resultado['asunto'] = 'Ref: ' + str(row.numero) + ' ' \
+        resultado['asunto'] = 'Ref: ' + str(row.seguimiento) + ' ' \
                                                                                     ' - Shipper: ' + str(
             row.embarcador) + ' - Consig: ' \
                               '' + str(row.consignatario)
@@ -686,7 +687,7 @@ def get_data_html(row_number, row, row2, row3, title, texto, resultado,seguimien
             volumen = None
 
         campos = [
-            ("Internal Reference", row.numero),
+            ("Internal Reference", row.seguimiento),
             ("Delivery date", llegada if llegada is not None else ""),
             ("Port of Loading", str(row.origen) if row.origen is not None else ""),
             ("Port of Discharge", str(row.destino) if row.destino is not None else ""),
